@@ -1,0 +1,10 @@
+@import 'config';
+
+.header__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Mono", "Courier New", monospace;
+    font-size: 1.5em;
+}
