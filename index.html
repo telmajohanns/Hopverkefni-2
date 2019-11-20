@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="is">
+  <script>
+    fetch("./lectures.json")
+      .then(res => res.json())
+      .then(res => console.log(res));
+  </script>
   <head>
     <meta charset="utf-8" />
     <link
@@ -20,10 +25,27 @@
           </div>
         </div>
       </div>
+    
+    
+    
+    <div class="page__content">
+      <div class="page_buttons"></div>
+
+      <div class="page__cards"></div>
+      <div class="page__container">
+        <div class="card">
+          <img class="card__picture" src="./img/thumb1.jpg">
+          <a href=".fyrirlestur.html?slug=html-sagan"></a>
+          <div class="card__content">
+            <div class="card__text">
+              <p>HTML</p>
+              <h2>Sagan</h2>
+              <a href="./fyrirlestur.html?slug=html-sagan"></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-    </header>
-    <main>
-      <script src=""></script>
-    </main>
   </body>
 </html>
