@@ -2,4 +2,9 @@
 
 .header__text {
     font-family: $font-heading;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
 }
