@@ -1,23 +1,47 @@
 <!DOCTYPE html>
 <html lang="is">
-<head>
-  <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Mono:400,400i,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="grid.css">
-  <link rel="stylesheet" href="dist/styles.css">
-  <title>Hópverkefni 2</title>
-</head>
-<body>
+  <script>
+    fetch("./lectures.json")
+      .then(res => res.json())
+      .then(res => console.log(res));
+  </script>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Mono:400,400i,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="grid.css" />
+    <link rel="stylesheet" href="dist/styles.css" />
+    <title>Hópverkefni 2</title>
+  </head>
+  <body>
     <header>
-        <div class="header__container">
-          <div class="header__text">
-            <p>Vefforritun</p>
-            <h1>Fyrirlestrar</h1>
+      <div class="header__container">
+        <div class="header__text">
+          <p>Vefforritun</p>
+          <h1>Fyrirlestrar</h1>
+        </div>
+      </div>
+    </header>
+    <div class="page__content">
+      <div class="page_buttons"></div>
+
+      <div class="page__cards"></div>
+      <div class="page__container">
+        <div class="card">
+          <img class="card__picture" src="./img/thumb1.jpg">
+          <a href=".fyrirlestur.html?slug=html-sagan"></a>
+          <div class="card__content">
+            <div class="card__text">
+              <p>HTML</p>
+              <h2>Sagan</h2>
+              <a href="./fyrirlestur.html?slug=html-sagan"></a>
+            </div>
           </div>
         </div>
-      </header>
-  <main>
-    <script src=""></script>
-  </main>
-</body>
+
+      </div>
+    </div>
+  </body>
 </html>
