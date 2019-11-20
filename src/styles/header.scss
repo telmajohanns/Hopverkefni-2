@@ -1,10 +1,5 @@
 @import 'config';
 
 .header__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     font-family: $font-heading;
-    font-size: 1.5em;
 }
