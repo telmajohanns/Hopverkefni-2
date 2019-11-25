@@ -1,0 +1,21 @@
+@import 'config';
+
+.page__content{
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+.page__cards{
+    display: flex;
+    max-width: $max-width;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    display: flex;
+    position: relative;
+    margin: 20px 0;
+    flex-direction: column;
+    justify-content: space-between;
+}
