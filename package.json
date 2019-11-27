@@ -16,6 +16,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
     "browser-sync": "^2.26.7",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.2.0",
@@ -32,5 +35,8 @@
   "bugs": {
     "url": "https://github.com/telmajohanns/Hopverkefni-2/issues"
   },
-  "homepage": "https://github.com/telmajohanns/Hopverkefni-2#readme"
+  "homepage": "https://github.com/telmajohanns/Hopverkefni-2#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.7.0"
+  }
 }
