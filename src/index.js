@@ -1,3 +1,4 @@
+/* eslint-disable eol-last */
 import List from './lib/list';
 
 document.addEventListener('DOMContentLoaded', () => {
