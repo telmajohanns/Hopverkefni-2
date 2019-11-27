@@ -20,10 +20,10 @@ export default class Lecture {
   }
 }
 
-createHeader(data) {
-  const category = el('div', data.category);
+function createHeader(data) {
+  const category = ('div', data.category);
   category.classList.add('lecture__header--category');
-  const headingElement = el('h1', data.title);
+  const headingElement = ('h1', data.title);
   headingElement.classList.add('lecture__header--title');
 
   if (data.image) {
