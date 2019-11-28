@@ -5,6 +5,18 @@ import { el, empty } from './helpers';
 export default class List {
   constructor() {
     this.container = document.querySelector('.list');
+    this.url = './lectures.json';
+
+    this.completedLectures = loadSavedLectures();
+
+    this.htmlButton = document.querySelector('.navbar__HTML');
+    this.htmlButton.addEventListener('click', this.catButtonHandler.bind(this));
+
+    this.cssButton = document.querySelector('.navbar__CSS');
+    this.cssButton.addEventListener('click', this.catButtonHandler.bind(this));
+
+    this.jsButton = document.querySelector('.navbar__JS');
+    this.jsButton.addEventListener('click', this.catButtonHandler.bind(this));
   }
 
   loadLectures() {
