@@ -5,7 +5,7 @@ export function empty(element) {
   }
 }
 
-function el(name, ...children) {
+export function el(name, ...children) {
   const element = document.createElement(name);
 
   for (let child of children) { /* eslint-disable-line */
