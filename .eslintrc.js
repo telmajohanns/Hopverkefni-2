@@ -9,6 +9,8 @@ module.exports = {
     'linebreak-style': 0,
     'arrow-parens': 0,
     'prefer-destructuring': 0,
+    'no-unused-vars': 0,
+    'consistent-return': 0,
   },
   plugins: ['import'],
 };
