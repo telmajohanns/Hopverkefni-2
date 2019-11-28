@@ -15,8 +15,8 @@ export default class List {
       })
       .then(json => {
         // for each lecture, create lecture list item and append to right place.
-        
-        console.log(json));
+
+        console.log(json);
       }
     const lectures = list.lectures;
   }
