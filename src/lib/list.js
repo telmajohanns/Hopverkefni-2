@@ -1,6 +1,6 @@
-import { empty, el } from './helpers';
-import * as converter from './converter';
-import { loadSavedLectures } from './storage';
+/* eslint-disable padded-blocks */
+/* eslint-disable no-trailing-spaces */
+import { el, empty } from './helpers';
 
 export default class List {
   constructor() {
@@ -21,68 +21,49 @@ export default class List {
 
   loadLectures() {
     return fetch(this.url)
-    .then((res) => {
-      if (!res.ok){
-        throw new Error('Gat ekki sótt fyrirlestra');
-      }
-      return res.json();
-    });
-      }
-
-    renderData(data, x) {
-      if (typeof x !== 'undefined' && x.length > 0){
-        for (let i=0; i<x.length; i+= 1){
-          for(let item of data.lectures){
-            if (x[i] === item.category){
-              this.renderItem(item);
-            }
-          }
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error('Gat ekki sótt fyrirlestra');
         }
-      } else {
-        for(let item of data.lectures){
-          this.renderItem(item);
-        }
-      }
-    }
-
-    renderItem(item){
-      const pictureContainer = converter.generatePictureContainer(item.category, item.slug);
-
-      const imageElement = converter.generateCardPicture(item.picture);
-      pictureContainer.appendChild(imageElement);
-      let titleElement;
-
-      if (this.completedLectures.includes(item.slug)){
-        titleElement = converter.generateCardContent(item.title, item.category, 'card__checked');
-      }else {
-        titleElement = converter.generateCardContent(item.title, item.category);
-      }
-      pictureContainer.appendChild(titleElement);
-
-      this.container.appendChild(pictureContainer);
-      }
-
-      load(x){
-        empty(this.container);
-        this.loadLectures()
-        .then((data) => {
-          this.renderData(data,x);
-        });
-    }
-
-    refreshList(){
-      const selected = document.querySelectorAll('.navbar__selected');
-      const x = [];
-      for (let el of selected){
-        x.push(el.firstChild.nodeValue.toLowerCase());
-      }
-      this.load(x);
-    }
+        return res.json();
+      });
+  }
   
-    xButtonHandler(e){
-      const {target } = e;
-      target.classList.toggle('navbar__selected');
-      this.refreshList();
+  load() {
+    empty(this.container);
+    const list = fetch('lectures.json');
+  }
+{
+  createLectureListItem(title, category, thumbnail, slug){
+    const category = el('div', data.category)
+    category.classList.add('listItem__category')
+  }
+}
+}
 
-    }
-    }
+// export default class List {
+// constructor() {
+// this.container = document.querySelector('.list');
+// }
+
+// load() {
+// empty(this.container);
+// const list = fetch('lectures.json')
+// }
+
+// create one lecture list item like in the útlit image.
+// createLectureListItem(title, category, thumbnail, slug){
+// const category = el('div', data.category);
+// category.classList.add('listItem__category');
+
+// const title = el('h1', data.title);
+// title.classList.add('listItem__title');
+
+// }
+// }
+
+// búa til öll elements
+
+// setja rétta klasa og src á mynd
+
+// return element
