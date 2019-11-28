@@ -1,4 +1,3 @@
-import { createElement } from './helpers';
 
 export function generateThumbContainer(x, slug) {
   const link = createElement('a');
