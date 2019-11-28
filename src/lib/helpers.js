@@ -4,3 +4,15 @@ export function empty(element) {
     element.removeChild(element.firstChild);
   }
 }
+
+function el(name, ...children) {
+  const element = document.createElement(name);
+
+  for (let child of children) { /* eslint-disable-line */
+    if (typeof child === 'string') {
+      element.appendChild(document.createTextNode(child));
+    } else if (child) {
+      element.appendChild(child);
+    }
+  }
+}
