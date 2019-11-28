@@ -1,44 +1,57 @@
-import { empty, el } from './helpers';
+/* eslint-disable padded-blocks */
+/* eslint-disable no-trailing-spaces */
+import { el, empty } from './helpers';
 
 export default class List {
   constructor() {
     this.container = document.querySelector('.list');
   }
 
+  loadLectures() {
+    return fetch(this.url)
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error('Gat ekki sótt fyrirlestra');
+        }
+        return res.json();
+      });
+  }
+  
   load() {
     empty(this.container);
-    const list = fetch('lectures.json')
-      .then(response => {
-        if (response.ok) {
-          return response.json();
-        }
-      })
-      .then(json => {
-        // for each lecture, create lecture list item and append to right place.
-
-        console.log(json);
-      }
-    const lectures = list.lectures;
+    const list = fetch('lectures.json');
   }
-
-  // create one lecture list item like in the útlit image.
+{
   createLectureListItem(title, category, thumbnail, slug){
-  // <div class="card html">
-  //   <a href="./fyrirlestur.html?slug=html-sagan"></a>
-  //   <img class="card__picture" src="./img/thumb1.jpg" />
-  //   <div class="card__content">
-  //     <div class="card__text">
-  //       <p>HTML</p>
-  //       <h2>Sagan</h2>
-  //     </div>
-  //   </div>
-  // </div>
-
-  // búa til öll elements
-
-  // setja rétta klasa og src á mynd
-
-  // return element
-
+    const category = el('div', data.category)
+    category.classList.add('listItem__category')
   }
 }
+}
+
+// export default class List {
+// constructor() {
+// this.container = document.querySelector('.list');
+// }
+
+// load() {
+// empty(this.container);
+// const list = fetch('lectures.json')
+// }
+
+// create one lecture list item like in the útlit image.
+// createLectureListItem(title, category, thumbnail, slug){
+// const category = el('div', data.category);
+// category.classList.add('listItem__category');
+
+// const title = el('h1', data.title);
+// title.classList.add('listItem__title');
+
+// }
+// }
+
+// búa til öll elements
+
+// setja rétta klasa og src á mynd
+
+// return element
