@@ -1,12 +1,32 @@
 # Upplýsingar um hvernig keyra skuli verkefnið
 
-Clonea þarf verkefnið frá [github svæðinu okkar] (https://github.com/telmajohanns/Hopverkefni-2)
+Clonea þarf verkefnið frá [github svæðinu okkar](https://github.com/telmajohanns/Hopverkefni-2)
 
 Til þess að keyra verkefnið þarf að gera skipunina `npm install` inni í gitbash og þá eru öll gögnin sótt.
 
-Setja þarf upp rollup sem pakkar saman JavaScript kóðanum og babel til þeess að transpila kóðann.
+Setja þarf upp rollup sem pakkar saman JavaScript kóðanum og babel til þess að transpila kóðann.
 
 Til að keyra verkefnið er skipunin `npm run dev` sett inn og þá opnast síðan.
+
+Vefsíðuna má sjá hér 
+
+## Lýsing á uppsetningu verkefnis
+
+Í rót höfum við index.html og fyrirlestur.html.
+
+Síðan höfum við möppu sem heitir `src` og þar er index.js. 
+Inni í möppunni er síðan tvær möppur sem heita `lib` og `styles.`
+Þær innihalda JavaScript kóðana og scss skjöl.
+
+
+## Höfundar
+
+Bjarki Grettisson             -       (bjg56@hi.is)
+
+María Lísa Thomasdóttir       -       (mlt1@hi.is)    
+
+Telma Jóhannsdóttir           -       (tej2@hi.is)
+
 
 
 # Hópverkefni 2
