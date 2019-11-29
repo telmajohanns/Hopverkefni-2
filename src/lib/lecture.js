@@ -25,7 +25,6 @@ export default class Lecture {
   }
 
   renderData(data) {
-    console.log(data);
     this.renderItem(data);
   }
 
@@ -71,13 +70,11 @@ export default class Lecture {
 
     button.addEventListener('click', () => {
       window.localStorage.setItem(item.slug, 'finished');
-      console.log('saved');
       button.classList.add('hidden');
       finButton.classList.remove('hidden');
     });
     finButton.addEventListener('click', () => {
       window.localStorage.removeItem(item.slug);
-      console.log(item);
       button.classList.remove('hidden');
       finButton.classList.add('hidden');
     });

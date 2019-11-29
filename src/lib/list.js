@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import { empty, createElement } from './helpers';
 import { generateImage, generateTitle } from './converter';
 
@@ -18,7 +19,6 @@ export default class List {
   }
 
   renderData(data) {
-    console.log(data);
     data.lectures.map(item => {
       this.renderItem(item);
     });
