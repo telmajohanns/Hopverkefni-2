@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html lang="is">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Mono:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="dist/styles.css">
+    <script type="module" src="./dist/bundle.js"></script>
   <title>Fyrirlestur</title>
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Mono:400,400i,700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="grid.css">
-  <link rel="stylesheet" href="/dist/styles.css">
 </head>
-<body class="lecture__page">
-    <div class="lecture__header">
-        <div class="header__text">
-          <div class="lecture__header--category">category</div>
-            <h1 class="lecture__header--title">title</h1>
-          </div>
-        </div>
-        <script src="/dist/bundle.js"></script>
+<body class="lecture-page">
+  <header class="header">
+    <div class="header__box">
+      <div class="header__content">
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="page">
+
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__content">
+      <button class="footer__button hidden">
+        Klára fyrirlestur
+      </button>
+      <button class="button__finished hidden">
+        Fyrirlestur kláraður
+      </button>
+      <a href="./index.html" class="footer__link">
+        <p>Til baka</p>
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
