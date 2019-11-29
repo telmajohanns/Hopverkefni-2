@@ -39,7 +39,7 @@ export default class List {
     const titleElement = generateTitle(item.title, item.category, item.slug);
     titleElement.className = 'card__content';
     card.appendChild(titleElement);
-    link.appendChild(titleElement)
+    link.appendChild(titleElement);
 
 
     this.container.appendChild(card);

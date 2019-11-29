@@ -38,7 +38,7 @@ export default class Lecture {
     const store = window.localStorage.getItem(item.slug);
 
     const button = document.querySelector('.footer__button');
-    const finButton = document.querySelector('.button__finished');
+    const finButton = document.querySelector('.footer__button--finished');
 
     const header = document.querySelector('.header');
     if (item.image != undefined) {
@@ -63,7 +63,7 @@ export default class Lecture {
 
     page.appendChild(pageContainer);
 
-    if (store == 'finished') {
+    if (store === 'finished') {
       finButton.classList.remove('hidden');
     } else {
       button.classList.remove('hidden');
