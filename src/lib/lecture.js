@@ -35,7 +35,7 @@ export default class Lecture {
     pageContainer.className = 'page__content';
     const counter = item.content.length;
 
-    var store = window.localStorage.getItem(item.slug);
+    const store = window.localStorage.getItem(item.slug);
 
     const button = document.querySelector('.footer__button');
     const finButton = document.querySelector('.button__finished');
