@@ -1,0 +1,29 @@
+@import "config";
+
+.footer {
+  display: flex;
+  padding: 0 20px;
+  justify-content: center;
+  margin: 40px 0;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__button {
+    margin: 20px 0;
+    font-family: "Roboto Mono", "Courier New", monospace;
+    font-size: 1rem;
+    background: none;
+    border: 0;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    font-family: "Roboto Mono", "Courier New", monospace;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+}
