@@ -42,18 +42,13 @@ export function generateTitle(title, text, slug) {
   container.appendChild(textContainer);
   container.appendChild(check);
 
-
-  /* if ( == 'finished') {
-    checkP.appendChild(mark);
-  } */
-
   return container;
 }
 
 export function generateQuote() {
-  //
+
 }
 
 export function generateText() {
-  //
+  
 }
