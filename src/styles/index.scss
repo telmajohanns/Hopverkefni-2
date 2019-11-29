@@ -17,12 +17,18 @@ h2{
         flex-direction: column;
     }
     &__cards{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+       display: flex;
+       justify-content: center;
+       max-width: $max-width;
+       margin-left: 32px;
     }
     
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .card{
     display: flex;
