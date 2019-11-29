@@ -10,7 +10,7 @@ export default class List {
   }
 
   loadLectures() {
-    return fetch(this.url).then(res => {
+    return fetch(this.url).then((res) => {
       if (!res.ok) {
         throw new Error('Gat ekki sótt fyrirlestra');
       }
@@ -19,7 +19,7 @@ export default class List {
   }
 
   renderData(data) {
-    data.lectures.map(item => {
+    data.lectures.map((item) => {
       this.renderItem(item);
     });
   }
