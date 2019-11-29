@@ -21,26 +21,10 @@ h2 {
     display: flex;
     justify-content: center;
     max-width: $max-width;
+    margin: auto;
   }
 }
-.card{
-    display: flex;
-    position: relative;
-    width: 387px;
-    margin: 20px 0;
-    flex-direction: column;
-    background-color: $color-grey-light;
-    justify-content: space-between;
 
-    &__:hover {
-        background-color: $color-grey-dark;
-        transition: 300ms ease-in-out;
-      }
-
-    &__thumb {
-        width: 100%;
-    }
-}
 .list {
   display: flex;
   flex-direction: row;
@@ -55,7 +39,12 @@ h2 {
   flex-direction: column;
   background-color: $color-grey-light;
   justify-content: space-between;
+
+  &__thumb {
+    width: 100%;
+  }
 }
+
 .card:hover {
   background-color: $color-grey-dark;
   transition: 300ms ease-in-out;

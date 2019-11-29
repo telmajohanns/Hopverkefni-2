@@ -35,7 +35,7 @@ export default class Lecture {
     pageContainer.className = 'page__content';
     const counter = item.content.length;
 
-    var store = window.localStorage.getItem(item.slug);
+    const store = window.localStorage.getItem(item.slug);
 
     const button = document.querySelector('.footer__button');
     const finButton = document.querySelector('.button__finished');
@@ -45,9 +45,15 @@ export default class Lecture {
       header.style.backgroundImage = `url('./${item.image}')`;
     }
 
-    const headerContent = document.querySelector('.header__content');
-    headerContent.appendChild(createElement('p', item.category));
-    headerContent.appendChild(createElement('h1', item.title));
+    const headerContent = document.querySelector('.header__text');
+    const headerText = createElement('p', item.category);
+    headerText.className = 'header__paragraph';
+    const headerTitle = createElement('h1', item.title);
+    headerTitle.className = 'header__title';
+
+    headerContent.appendChild(headerText);
+    headerContent.appendChild(headerTitle);
+
 
     for (let i = 0; i < counter; i++) {
       const type = item.content[i];
