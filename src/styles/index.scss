@@ -39,6 +39,10 @@ h2{
     flex-direction: column;
     background-color: $color-grey-light;
     justify-content: space-between;
+
+    &__thumb {
+        width: 100%;
+    }
 }
 .card:hover{
     background-color: $color-grey-dark;

@@ -4,14 +4,14 @@ import { generateImage, generateTitle } from './converter';
 
 export default class List {
   constructor() {
-    this.container = document.querySelector(".list");
-    this.url = "./lectures.json";
+    this.container = document.querySelector('.list');
+    this.url = './lectures.json';
   }
 
   loadLectures() {
     return fetch(this.url).then(res => {
       if (!res.ok) {
-        throw new Error("Gat ekki sótt fyrirlestra");
+        throw new Error('Gat ekki sótt fyrirlestra');
       }
       return res.json();
     });
@@ -25,21 +25,22 @@ export default class List {
   }
 
   renderItem(item) {
-    const card = createElement("div");
+    const card = createElement('div');
     card.className = `card ${item.category}`;
 
     const imageElement = generateImage(item.thumbnail);
     card.appendChild(imageElement);
 
-    const link = createElement("a");
-    const span = createElement("span");
-    link.setAttribute("href", `./fyrirlestur.html?slug=${item.slug}`);
-    link.appendChild(span);
+    const link = createElement('a');
+    link.setAttribute('href', `./fyrirlestur.html?slug=${item.slug}`);
     card.appendChild(link);
+    link.appendChild(imageElement);
 
     const titleElement = generateTitle(item.title, item.category, item.slug);
-    titleElement.className = "card__content";
+    titleElement.className = 'card__content';
     card.appendChild(titleElement);
+    link.appendChild(titleElement)
+
 
     this.container.appendChild(card);
   }

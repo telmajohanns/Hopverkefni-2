@@ -2,7 +2,10 @@ import { createElement } from './helpers';
 
 export function generateImage(imagePath) {
   if (!imagePath) {
-    return document.createElement('div');
+    const imageElementNone = createElement('img');
+    imageElementNone.className = 'card__thumb';
+    imageElementNone.src = './img/grey.jpg';
+    return imageElementNone;
   }
 
   const imageElement = createElement('img');
