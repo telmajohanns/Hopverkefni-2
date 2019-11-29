@@ -1,4 +1,4 @@
-import { empty, createElement } from './helpers';
+import { createElement } from './helpers';
 import { contentCreator } from './creator';
 
 export default class Lecture {
@@ -9,13 +9,13 @@ export default class Lecture {
 
   loadLecture(slug) {
     return fetch(this.url)
-      .then(res => {
+      .then((res) => {
         if (!res.ok) {
           throw new Error('Gat ekki sótt fyrirlestra');
         }
         return res.json();
       })
-      .then(data => {
+      .then((data) => {
         const found = data.lectures.find(i => i.slug === slug);
         if (!found) {
           throw new Error('Fyrirlestur fannst ekki');
@@ -40,7 +40,7 @@ export default class Lecture {
     const finButton = document.querySelector('.footer__button--finished');
 
     const header = document.querySelector('.header');
-    if (item.image != undefined) {
+    if (item.image !== undefined) {
       header.style.backgroundImage = `url('./${item.image}')`;
     }
 

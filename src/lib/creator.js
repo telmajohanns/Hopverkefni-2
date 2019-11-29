@@ -1,3 +1,8 @@
+/* eslint-disable no-redeclare */
+/* eslint-disable block-scoped-var */
+/* eslint-disable no-var */
+/* eslint-disable vars-on-top */
+/* eslint-disable import/prefer-default-export */
 import { createElement } from './helpers';
 
 function youtubeCreator(item) {
@@ -85,19 +90,19 @@ function codeCreator(item) {
 }
 
 export function contentCreator(item) {
-  if (item.type == 'youtube') {
+  if (item.type === 'youtube') {
     var div = youtubeCreator(item);
-  } else if (item.type == 'text') {
+  } else if (item.type === 'text') {
     var div = textCreator(item);
-  } else if (item.type == 'quote') {
+  } else if (item.type === 'quote') {
     var div = quoteCreator(item);
-  } else if (item.type == 'image') {
+  } else if (item.type === 'image') {
     var div = imageCreator(item);
-  } else if (item.type == 'heading') {
+  } else if (item.type === 'heading') {
     var div = headingCreator(item);
-  } else if (item.type == 'list') {
+  } else if (item.type === 'list') {
     var div = listCreator(item);
-  } else if (item.type == 'code') {
+  } else if (item.type === 'code') {
     var div = codeCreator(item);
   }
   return div;
