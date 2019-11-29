@@ -18,6 +18,24 @@
     background: none;
     border: 0;
   }
+
+  &__button.hidden{
+    display: none;
+  }
+
+  &__button--finished{
+    margin: 20px 0;
+    font-family: "Roboto Mono", "Courier New", monospace;
+    font-size: 1rem;
+    background: none;
+    border: 0;
+    color: $color-green-light;
+  }
+
+  &__button--finished.hidden{
+    display: none;
+  }
+  
   &__link {
     display: flex;
     justify-content: center;
