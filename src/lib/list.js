@@ -1,5 +1,6 @@
-import { empty, createElement } from "./helpers";
-import { generateImage, generateTitle } from "./converter";
+import { empty, createElement } from './helpers';
+import { generateImage, generateTitle } from './converter';
+
 
 export default class List {
   constructor() {

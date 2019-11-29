@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 <html lang="is">
-  <script>
-    fetch("./lectures.json")
-      .then(res => res.json())
-      .then(res => console.log(res));
-  </script>
   <head>
     <meta charset="utf-8" />
     <link
@@ -37,5 +32,8 @@
       </div>
     </div>
     <script src="/dist/bundle.js"></script>
+    <div class="page__cards">
+      <div class="list"></div>
+    </div>
   </body>
 </html>

@@ -1,5 +1,5 @@
-import { empty, createElement } from "./helpers";
-import { contentCreator } from "./creator";
+import { empty, createElement } from './helpers';
+import { contentCreator } from './creator';
 
 export default class Lecture {
   constructor() {
