@@ -1,29 +1,24 @@
-@import 'config';
+@import "config";
 
 .page__buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
 }
 
 .buttons {
-    &__button {
-        display: flex;
-        margin: 0.7em;
-        margin-top: $gutter * 2;
-        font-family: $font-heading;
-        font-size: 1.5em;
-        font-weight: bold;
-        border-radius: 16px;
-        cursor: pointer;
-        background-color: $color-grey-light;
-        padding: 0.5em 1em;
-        transition: background-color 300ms ease-in-out;
-
-        &:hover {
-            background-color: $color-grey-dark;
-        }
-    }
+  &__button {
+    display: flex;
+    margin: 0.7em;
+    margin-top: $gutter * 2;
+    font-family: $font-heading;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: $color-grey-light;
+    padding: 0.5em 1em;
+    transition: background-color 300ms ease-in-out;
+  }
 }
-
