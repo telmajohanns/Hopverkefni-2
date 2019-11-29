@@ -6,7 +6,7 @@ Til þess að keyra verkefnið þarf að gera skipunina `npm install` inni í gi
 
 Setja þarf upp rollup sem pakkar saman JavaScript kóðanum og babel til þess að transpila kóðann.
 
-Til að keyra verkefnið er skipunin `npm run dev` sett inn og þá opnast síðan.
+Til að keyra verkefnið er skipunin `npm run dev` sett inn og þá opnast vefsíðan okkar.
 
 Vefsíðuna má sjá hér 
 
