@@ -1,5 +1,12 @@
 @import "config";
 
+.header__box{
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  
+}
 .header {
   display: flex;
   background-image: url(/img/header.jpg);
