@@ -8,7 +8,7 @@ Setja þarf upp rollup sem pakkar saman JavaScript kóðanum og babel til þess 
 
 Til að keyra verkefnið er skipunin `npm run dev` sett inn og þá opnast vefsíðan okkar.
 
-Vefsíðuna má sjá hér 
+Vefsíðuna má sjá [hér](https://notendur.hi.is/bjg56/vefforritun/hopverkefni-2/) 
 
 ## Lýsing á uppsetningu verkefnis
 
