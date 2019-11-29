@@ -33,12 +33,10 @@ export default class List {
     empty(this.container);
     const list = fetch('lectures.json');
   }
-{
   createLectureListItem(title, category, thumbnail, slug){
     const category = el('div', data.category)
     category.classList.add('listItem__category')
   }
-}
 }
 
 // export default class List {
