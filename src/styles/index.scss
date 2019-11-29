@@ -1,46 +1,72 @@
-@import 'config';
-@import 'footer';
+@import "config";
+@import "footer";
 
-h2{
-    font-size: 24px;
-    font-weight: bold;
+h2 {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.page{
+.page {
+  display: flex;
+  padding: 0 20px;
+  justify-content: center;
+
+  &__content {
     display: flex;
-    padding: 0 20px;
+    max-width: $max-width;
     justify-content: center;
-
-    &__content{
-        display: flex;
-        max-width: $max-width;
-        justify-content: center;
-        flex-direction: column;
-    }
-    &__cards{
-       display: flex;
-       justify-content: center;
-       max-width: $max-width;
-       margin-left: 10%;
-    }
-    
-}
-.list{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.card{
-    display: flex;
-    position: relative;
-    width: 387px;
-    margin: 20px 0;
     flex-direction: column;
-    background-color: $color-grey-light;
-    justify-content: space-between;
+  }
+  &__cards {
+    display: flex;
+    justify-content: center;
+    max-width: $max-width;
+  }
 }
-.card:hover{
-    background-color: $color-grey-dark;
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  display: flex;
+  position: relative;
+  width: 387px;
+  margin: 20px 0;
+  flex-direction: column;
+  background-color: $color-grey-light;
+  justify-content: space-between;
+}
+.card:hover {
+  background-color: $color-grey-dark;
+  transition: 300ms ease-in-out;
+}
+
+.buttons {
+  display: flex;
+  padding: 0 20px;
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 1.3rem;
+    font-family: "Roboto Mono", "Courier New", monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #ccc;
+    border: 0;
+    border-radius: 1rem;
+  }
+  &__button:hover {
+    background-color: #999999;
     transition: 300ms ease-in-out;
+  }
+  &__button.button-active {
+    background-color: #2d2;
+  }
+  &__button.button-active:hover {
+    background-color: #148514;
+    transition: 300ms ease-in-out;
+  }
 }
