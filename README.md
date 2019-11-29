@@ -1,3 +1,18 @@
+# Upplýsingar um hvernig keyra skuli verkefnið
+
+Clonea þarf verkefnið frá [github svæðinu okkar] (https://github.com/telmajohanns/Hopverkefni-2)
+
+Til þess að keyra verkefnið þarf að gera skipunina 
+> npm install
+inni í gitbash og þá eru öll gögnin sótt.
+
+Setja þarf upp rollup sem pakkar saman JavaScript kóðanum og babel til þeess að transpila kóðann.
+
+Til að keyra verkefnið er skipunin
+>npm run dev
+sett inn og þá opnast síðan.
+
+
 # Hópverkefni 2
 
 Verkefnið felst í því að smíða prótótýpu af fyrirlestravef fyrir vefforritun. Gefin eru gögn sem unnin eru uppúr námsefni vetrarins.
