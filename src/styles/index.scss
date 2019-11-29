@@ -47,7 +47,22 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
+.card {
+  display: flex;
+  position: relative;
+  width: 387px;
+  margin: 20px 0;
+  flex-direction: column;
+  background-color: $color-grey-light;
+  justify-content: space-between;
+}
+.card:hover {
+  background-color: $color-grey-dark;
+  transition: 300ms ease-in-out;
+}
+.card.card-hidden {
+  display: none;
+}
 
 .buttons {
   &__button:hover {
