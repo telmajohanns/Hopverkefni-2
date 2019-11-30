@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 /* eslint-disable no-redeclare */
 /* eslint-disable block-scoped-var */
 /* eslint-disable no-var */

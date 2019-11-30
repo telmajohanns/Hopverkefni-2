@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 /* eslint-disable no-restricted-syntax */
 export function empty(element) {
   while (element.firstChild) {

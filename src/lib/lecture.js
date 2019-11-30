@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 import { createElement } from './helpers';
 import { contentCreator } from './creator';
 

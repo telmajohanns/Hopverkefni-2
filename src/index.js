@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-restricted-syntax */
 import List from './lib/list';
 import Lecture from './lib/lecture';
 import { readButton } from './lib/helpers';
@@ -16,6 +18,5 @@ document.addEventListener('DOMContentLoaded', () => {
     for (const button of document.querySelectorAll('.buttons__button')) {
       button.addEventListener('click', readButton);
     }
-    console.log(buttons.length);
   }
 });
